@@ -13,24 +13,42 @@
             }*/
 
             .container {
-                width: 900px;
+                max-width: 960px;
+                padding: 20px;
                 margin: 0 auto;
-                text-align: center;
+                background-color: #f1f1db;
             }
 
-            .contact {
-                width: 400px;
-                padding-left: 200px;
-                margin: 0 auto;
+            .site-header {
+                background-color: black;
+                text-align: center;
+                color: white;
             }
 
             .bio {
-                width: 500px;
-                margin: 0 auto;
+                float: left;
+                width: 70%;
             }
 
-            li {
-                text-align: left;
+            .contact {
+                float: left;
+                width: 30%;
+            }
+
+            .pic {
+                float: left;
+            }
+
+            .info {
+                width: 350px;
+                float: left;
+                margin-top: 0px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .clearfix {
+                clear: both;
             }
         </style>
 
@@ -39,13 +57,20 @@
     <body>
 
         <div class="container">
-            <h1>Student Bio</h1>
-            <h2>Victor Tsang</h2>
-            <img src="" alt="">
-            <p class="bio">My name is Victor Tsang. I want to be a full-stack developer. I have a BA in Economics from UCSC. Before I attended the bootcamp, I was working in marketing. I did SEO, Banner Ads, content management, and made landing pages using very very
-                basic html and css. I tried to self-teach myself web development but I don't think my methodologies worked, which is why I am attending the UC Berkeley Coding Bootcamp.</p>
-            <h1>Contact Info</h1>
+
+            <header class="site-header">
+                <h1>Student Bio</h1>
+            </header>
+
+            <div class="bio">
+                <h2>Victor Tsang</h2>
+                <img class="pic" src="http://placecorgi.com/200/200" alt="">
+                <p class="info">My name is Victor Tsang. I want to be a full-stack developer. I have a BA in Economics from UCSC. Before I attended the bootcamp, I was working in marketing. I did SEO, Banner Ads, content management, and made landing pages using very
+                    very basic html and css. I tried to self-teach myself web development but I don't think my methodologies worked, which is why I am attending the UC Berkeley Coding Bootcamp.</p>
+            </div>
+
             <div class="contact">
+                <h2>Contact Info</h2>
                 <ul>
                     <li><strong>Email:</strong>
                         <a href="mailto:victorwltsang@gmail.com">victorwltsang@gmail.com</a></li>
@@ -55,6 +80,7 @@
                         <a href="https://victorwltsang.github.io/Basic-Portfolio/">Portfolio</a></li>
                 </ul>
             </div>
+            <div class="clearfix"></div>
         </div>
 
     </body>
